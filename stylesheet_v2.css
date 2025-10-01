@@ -14,18 +14,43 @@ Orange Halloween :					#F56F16
 
 
 
-.domine-font-bold {
+.cabin {
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.domine {
   font-family: "Domine", serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
 }
 
+.koh-santepheap-bold {
+  font-family: "Koh Santepheap", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.koh-santepheap-black {
+  font-family: "Koh Santepheap", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
 p, h1, h2, h3, h4 {
-  font-family: "Domine", serif;
+  font-family: "Cabin", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 a {
@@ -49,7 +74,7 @@ body {
 	background-color: #fff3eb;
 }
 
-p, h1, h4, body{
+p, h1, h2, h3, h4, body{
 	margin: 0;
 }
 
@@ -69,6 +94,8 @@ menu p {
 	font-size: 140%;
 	color: #ff5f3b;
 	text-decoration: none;
+	
+	
 }
 
 li.menu {
@@ -114,16 +141,16 @@ div.menu {
 	left: 5%;
 }
 
-#homeimg h1, #homeimg h4 {
+#homeimg h1, #homeimg h2 {
 	color: black;
 }
 
 #homeimg h1 {
-	font-size: 807%;
+	font-size: 9vw;
 	overflow: hidden;
 }
 
-#homeimg h4 {
+#homeimg h2 {
 	font-size: 150%;
 	overflow: hidden;
 }
@@ -164,7 +191,7 @@ div.article h1 {
   left: 0;
   bottom: 8px;
   width: 0;
-  height: 2px;
+  height: 4px;
   background: black;
   transition: width 0.3s ease;
 }
@@ -179,12 +206,33 @@ footer {
 	
 }
 
+footer h4 {
+	color: #fff;
+	font-size: 130%;
+	margin-bottom: 4px;
+}
 footer p {
-	color: #fff3eb;
+	color: #fff;
 }
 
-footer div {
+footer > div {
 	flex-grow: 1;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 8px;
+}
+footer > div > div {
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+footer > div img {
+	height: 30px;
+	margin: 6px;
+}
+
+footer > div > a > div {
+	display: flex;
+	align-items: center;
 }
