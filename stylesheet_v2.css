@@ -146,7 +146,7 @@ div.menu {
 }
 
 #homeimg h1 {
-	font-size: 9vw;
+	font-size: clamp(10px, 9vw, 16vh);
 	overflow: hidden;
 }
 
@@ -208,7 +208,7 @@ footer {
 
 footer h4 {
 	color: #fff;
-	font-size: 130%;
+	font-size: 115%;
 	margin-bottom: 4px;
 }
 footer p {
