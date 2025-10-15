@@ -11,7 +11,7 @@ function checkScroll() {
   }
 }
 
-function underlineUpdate2() {
+function underlineUpdate() {
   underlineTitle.style.setProperty('--underline-height', innerWidth / (innerHeight * 2) + 'vh'); 
 }
 
