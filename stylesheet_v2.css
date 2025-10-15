@@ -105,11 +105,11 @@ menu p {
 }
 
 li.menu {
-    flex-grow: 1;
+    flex: 1;
 }
 
 li.menu.home {
-	flex-grow: 1.5;
+	flex: 1.5;
 }
 li.menu:hover {
 	background-color: var(--hoverDarkGray);
@@ -223,11 +223,11 @@ footer p {
 }
 
 footer > div {
-	flex-grow: 1;
+	flex: 1;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 8px;
+	padding: 8px;
 }
 footer > div > div {
 	margin-top: 6px;
