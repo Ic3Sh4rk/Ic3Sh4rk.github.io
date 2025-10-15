@@ -213,13 +213,13 @@ footer {
 }
 
 footer h4 {
-	color: #fff;
+	color: var(--veryLightPeach);
 	font-size: 115%;
 	margin-bottom: 4px;
 	text-align: center;
 }
 footer p {
-	color: #fff;
+	color: var(--veryLightPeach);
 }
 
 footer > div {
