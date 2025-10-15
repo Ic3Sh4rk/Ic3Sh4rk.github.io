@@ -17,7 +17,7 @@ Orange Halloween :					#F56F16
 	--hoverDarkGray : #333;
 	--veryLightPeach : #fff3eb;
 	--lightPeach: #ffede0;
-	--underline-height: 0.8vh;
+	--underline-height-bottom: 0.8vh;
 }
 
 
@@ -195,9 +195,9 @@ div.article h1 {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 1vh;
+  bottom: var(--underline-height-bottom, 1vh);
   width: 0;
-  height: var(--underline-height, 0.8vh);
+  height: var(--underline-height-bottom, 0.8vh);
   background: black;
   transition: width 0.3s ease;
 }

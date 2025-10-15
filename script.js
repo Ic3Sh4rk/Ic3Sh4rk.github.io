@@ -12,7 +12,7 @@ function checkScroll() {
 }
 
 function underlineUpdate() {
-  underlineTitle.style.setProperty('--underline-height', innerWidth / (innerHeight * 2) + 'vh'); 
+  underlineTitle.style.setProperty('--underline-height-bottom', innerWidth / (innerHeight * 2) + 'vh'); 
 }
 
 
