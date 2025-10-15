@@ -1,0 +1,23 @@
+/*
+Palette de couleur
+Orange :				#ff5f3b
+Gris foncé :			#1a1a1a
+Bleu doux :				#4d6080
+Blanc cassé :	 		#e9d9ca
+-------------------------------
+Bleu Nuit :				#170E61
+Vert Energie :			#2CED1A
+Orange Halloween :		#F56F16
+
+
+*/
+
+
+:root {
+	--orange: #ff5f3b;
+	--darkGray: #1a1a1a;
+	--hoverDarkGray : #333;
+	--veryLightPeach : #fff3eb;
+	--lightPeach: #ffede0;
+	--underline-height-bottom: 0.8vh;
+}
