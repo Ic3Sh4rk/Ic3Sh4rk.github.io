@@ -104,6 +104,16 @@ menu p {
 	text-decoration: none;
 }
 
+menu img {
+	height: 24px;
+	margin: 6px;
+}
+
+menu div {
+	display: flex;
+	align-items: center;
+}
+
 li.menu {
     flex: 1;
 }
