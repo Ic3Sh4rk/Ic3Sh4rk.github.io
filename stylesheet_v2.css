@@ -1,6 +1,6 @@
 /*
 Palette de couleur
-Orange :                    #f4721e
+Orange :                    #ff5f3b
 Gris foncé :                #1a1a1a
 Bleu doux :      						#4d6080
 Blanc cassé :     					#e9d9ca
@@ -11,6 +11,14 @@ Orange Halloween :					#F56F16
 
 
 */
+:root {
+	--orange: #ff5f3b;
+	--darkGray: #1a1a1a;
+	--hoverDarkGray : #333;
+	--veryLightPeach : #fff3eb;
+	--lightPeach: #ffede0;
+	--underline-height: 0.8vh;
+}
 
 
 
@@ -59,7 +67,7 @@ a {
 
 header {
 	position: fixed;
-	background-color: #1a1a1a;
+	background-color: var(--darkGray);
 	z-index: 999;
 	width: 100%;
 
@@ -71,7 +79,7 @@ header.hidden {
 }
 
 body {
-	background-color: #fff3eb;
+	background-color: var(--veryLightPeach);
 }
 
 p, h1, h2, h3, h4, body{
@@ -92,10 +100,8 @@ menu {
 
 menu p {
 	font-size: 140%;
-	color: #fff3eb;
+	color: var(--veryLightPeach);
 	text-decoration: none;
-	
-	
 }
 
 li.menu {
@@ -106,7 +112,7 @@ li.menu.home {
 	flex-grow: 1.5;
 }
 li.menu:hover {
-	background-color: #333333;
+	background-color: var(--hoverDarkGray);
 }
 
 div.menu {
@@ -168,7 +174,7 @@ div.article {
 	padding-bottom: 26px;
 	border-radius: 5px;
 	box-shadow: 0px 0px 5px 0.2px black;
-	background-color: #ffede0;
+	background-color: var(--lightPeach);
 	margin-bottom: 30px;
 
 }
@@ -176,7 +182,7 @@ div.article {
 div.article h1 {
 	font-size: 300%;
 	text-decoration: underline;
-	text-decoration-color: #ff5f3b;
+	text-decoration-color: var(--orange);
 }
 
 .underline-anim {
@@ -189,9 +195,9 @@ div.article h1 {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 8px;
+  bottom: 1vh;
   width: 0;
-  height: 4px;
+  height: var(--underline-height, 0.8vh);
   background: black;
   transition: width 0.3s ease;
 }
@@ -201,7 +207,7 @@ div.article h1 {
 }
 
 footer {
-	background-color: #1a1a1a;
+	background-color: var(--darkGray);
 	display: flex;
 	
 }
@@ -235,4 +241,8 @@ footer > div img {
 footer > div > a > div {
 	display: flex;
 	align-items: center;
+}
+
+footer > div:hover {
+	background-color: var(--hoverDarkGray);
 }
