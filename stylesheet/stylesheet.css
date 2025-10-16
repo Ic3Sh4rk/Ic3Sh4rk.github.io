@@ -54,13 +54,14 @@ div.article {
 }
 
 div.article h1 {
-	font-size: 300%;
+	font-size: min(7vh,10vw);
 	text-decoration: underline;
 	text-decoration-color: var(--orange);
+	padding-bottom: 1vh;
 }
 
 div.article p {
-	font-size: 150%;
+	font-size: min(4vh,5vw);
 }
 
 .underline-anim {
