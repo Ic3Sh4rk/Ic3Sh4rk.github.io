@@ -1,0 +1,11 @@
+body {
+	background-color: var(--veryLightPeach);
+}
+
+p, h1, h2, h3, h4, body{
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}

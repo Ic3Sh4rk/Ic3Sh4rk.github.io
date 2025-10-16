@@ -1,0 +1,42 @@
+footer {
+	background-color: var(--darkGray);
+	display: flex;	
+}
+
+footer h4 {
+	color: var(--veryLightPeach);
+	font-size: 115%;
+	margin-bottom: 4px;
+	text-align: center;
+}
+
+footer p {
+	color: var(--veryLightPeach);
+}
+
+footer > div {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 8px;
+}
+
+footer > div > div {
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+footer > div img {
+	height: 24px;
+	margin: 6px;
+}
+
+footer > div > a > div {
+	display: flex;
+	align-items: center;
+}
+
+footer > div:hover {
+	background-color: var(--hoverDarkGray);
+}
