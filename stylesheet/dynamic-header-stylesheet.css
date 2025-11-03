@@ -46,6 +46,25 @@ li.menu {
 li.menu.home {
 	flex: 1.5;
 }
+
+li.menu.home div.hidden-test {
+  display: inline-flex;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: shrink 10s forwards;
+}
+
+li.menu.home div.hidden-test p {
+	width: 100%;
+}
+
+@keyframes shrink {
+  from { width: 100%; }
+  to { width: 0; }
+}
+
+
+
 li.menu:hover {
 	background-color: var(--hoverDarkGray);
 }

@@ -1,3 +1,4 @@
+
 const header = document.querySelector('header');
 const underlineTitle = document.querySelector(':root');
 
@@ -15,8 +16,14 @@ function underlineUpdate() {
   underlineTitle.style.setProperty('--underline-height-bottom', innerWidth / (innerHeight * 2) + 'vh'); 
 }
 
+function homeButtonUpdate() {
+
+}
+
 
 window.addEventListener('scroll', checkScroll);
 window.addEventListener('load', checkScroll);
-window.addEventListener('load', underlineUpdate)
-window.addEventListener('resize', underlineUpdate)
+window.addEventListener('load', underlineUpdate);
+window.addEventListener('resize', underlineUpdate);
+window.addEventListener('load', homeButtonUpdate);
+window.addEventListener('resize', homeButtonUpdate);
