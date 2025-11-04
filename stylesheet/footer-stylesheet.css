@@ -14,8 +14,12 @@ footer p {
 	color: var(--veryLightPeach);
 }
 
-footer > div {
+footer a {
 	flex: 1;
+}
+
+footer a > div {
+	
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -27,12 +31,12 @@ footer > div > div {
 	margin-bottom: 6px;
 }
 
-footer > div img {
+footer img {
 	height: 24px;
 	margin: 6px;
 }
 
-footer > div > a > div {
+footer > a > div > div {
 	display: flex;
 	align-items: center;
 }
