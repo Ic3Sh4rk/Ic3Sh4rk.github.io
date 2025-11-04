@@ -2,7 +2,7 @@
 	--underline-height-bottom: 0.8vh;
 }
 
-#homeimg {
+.homeimg {
 	display: flex;
 	justify-content: center;
 	background-color: #000;
@@ -10,29 +10,33 @@
 	height: 100vh;
 }
 
-#homeimg img {
+.homeimg img#main {
 	height: 100vh;
 }
 
-#homeimg div {
+.homeimg img#icon {
+	height: clamp(5px, 4.5vw, 8vh);
+	/*margin-bottom: 2.8%;
+	height: clamp(4.125px, 4vw, 6vh);*/
+}
+
+.homeimg > div {
 	position: relative;
 	overflow: hidden;
 }
 
-#homeimg div div {
+.homeimg > div div {
 	position: absolute;
 	top: 37%;
 	left: 5%;
 }
 
-#homeimg h1 {
+.homeimg h1 {
 	font-size: clamp(10px, 9vw, 16vh);
-	overflow: hidden;
 }
 
-#homeimg h2 {
+.homeimg h2 {
 	font-size: 150%;
-	overflow: hidden;
 }
 
 div.corp {
