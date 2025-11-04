@@ -47,22 +47,32 @@ li.menu.home {
 	flex: 1.5;
 }
 
-li.menu.home div.hidden-test {
-  display: inline-flex;
+li.menu.home div.shrink {
+	display: inline-flex;
   overflow: hidden;
   white-space: nowrap;
-  animation: shrink 10s forwards;
+  animation: shrink 1.5s cubic-bezier(.67,0,.33,1) forwards;
 }
-
-li.menu.home div.hidden-test p {
-	width: 100%;
+li.menu.home div.enlarge {
+	display: inline-flex;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: enlarge 1.5s cubic-bezier(.67,0,.33,1) forwards;
 }
 
 @keyframes shrink {
-  from { width: 100%; }
-  to { width: 0; }
+  from { width: calc(175.617px + 40.8px); }
+  to { width: 40.8px; }
 }
 
+@keyframes enlarge {
+	from { width: 40.8px; }
+	to { width: calc(175.617px + 40.8px); }
+}
+
+li.menu.home div p {
+	margin-right: 6px;
+}
 
 
 li.menu:hover {
