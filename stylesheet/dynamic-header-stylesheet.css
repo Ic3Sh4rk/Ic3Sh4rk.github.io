@@ -43,25 +43,57 @@ li.menu {
 	flex: 1;
 }
 
-li.menu.home {
+li.menu.large.home {
 	flex: 1.5;
+	animation: homelarge 0.8s cubic-bezier(.67,0,.33,1) forwards;
+}
+@keyframes homelarge {
+	from {flex: 0.5;}
+	to {flex: 1.5;}
+}
+
+li.menu.large.contact {
+	flex: 1;
+	animation: contactlarge 0.8s cubic-bezier(.67,0,.33,1) forwards;
+}
+@keyframes contactlarge {
+	from {flex: 0.5;}
+	to {flex: 1;}
+}
+
+li.menu.thin.home {
+	flex: 0.5;
+	animation: homethin 0.8s cubic-bezier(.67,0,.33,1) forwards;
+}
+@keyframes homethin {
+	from {flex: 1.5;}
+	to {flex: 0.5;}
+}
+
+li.menu.thin.contact {
+	flex: 0.5;
+	animation: contactthin 0.8s cubic-bezier(.67,0,.33,1) forwards;
+}
+@keyframes contactthin {
+	from {flex: 1;}
+	to {flex: 0.5;}
 }
 
 li.menu.home div.shrink {
 	display: inline-flex;
   overflow: hidden;
   white-space: nowrap;
-  animation: shrink 1.5s cubic-bezier(.67,0,.33,1) forwards;
+  animation: shrink 0.8s cubic-bezier(.67,0,.33,1) forwards;
 }
 li.menu.home div.enlarge {
 	display: inline-flex;
   overflow: hidden;
   white-space: nowrap;
-  animation: enlarge 1.5s cubic-bezier(.67,0,.33,1) forwards;
+  animation: enlarge 0.8s cubic-bezier(.67,0,.33,1) forwards;
 }
 
 @keyframes shrink {
-  from { width: calc(175.617px + 40.8px); }
+  from {width: calc(175.617px + 40.8px);}
   to { width: 40.8px; }
 }
 
