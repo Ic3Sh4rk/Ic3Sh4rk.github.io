@@ -41,6 +41,6 @@ footer > a > div > div {
 	align-items: center;
 }
 
-footer > div:hover {
+footer > a > div:hover {
 	background-color: var(--hoverDarkGray);
 }
