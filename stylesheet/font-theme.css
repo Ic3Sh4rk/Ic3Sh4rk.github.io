@@ -7,6 +7,16 @@
 	"wdth" 100;
 }
 
+.cabin-bold{
+ 	font-family: "Cabin", sans-serif;
+ 	font-optical-sizing: auto;
+ 	font-weight: 700;
+	font-style: normal;
+	font-variation-settings:
+	"wdth" 100;
+}
+
+
 
 .domine {
 	font-family: "Domine", serif;
