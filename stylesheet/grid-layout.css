@@ -1,0 +1,104 @@
+div.corp {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 3vh;
+	padding-right: 3vh;
+	display: grid;
+	grid-gap: 1vh;
+	grid-template-columns: repeat(3,1fr);
+}
+
+.title {
+	grid-column: 1 / 4;
+	display: flex;
+	justify-content: center;
+}
+
+.title img {
+	width: 60%;
+	margin: 2vh;
+	max-height: 20vh;
+}
+
+.description {
+	width: calc(100% - 2vw);
+	padding-right: 1vw;
+	padding-left: 1vw;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	bottom: 4%;
+}
+
+.description h2 {
+	width: fit-content;
+	color: #fff;
+	font-size: 5vw;
+	border-radius: 1vw;
+}
+
+.box-image {
+	position: relative;
+	display: block;
+	border-radius: 1vw;
+	height: calc(92vw/3*4/3);
+}
+
+.box-image img {
+	width: 100%;
+	display: block;
+	border-radius: 1vw;
+	/*cursor: pointer;*/
+}
+
+.par4-1, .par4-2, .par4-3, .par4-4, .par3-1, .par3-2, .par3-3, .par2-1, .par2-2, .par1-1 {
+	overflow: hidden;
+	border-radius: 1vw;
+}
+
+div.box-image div:has(img).par4-1, div.box-image div:has(img).par3-1, div.box-image div:has(img).par1-1 {
+	height: 100%;
+}
+
+div.box-image div:has(img).par4-2 {
+	height: 75%;
+}
+div.box-image div:has(img).par4-3 {
+	height: 50%;
+}
+div.box-image div:has(img).par4-4 {
+	height: 25%;
+}
+
+div.box-image div:has(img).par3-2 {
+	height: 66.6666666%;
+}
+div.box-image div:has(img).par3-3 {
+	height: 33.333333%;
+}
+
+div.box-image div:has(img).par2-2 {
+	height: 50%;
+}
+
+
+.par4-2 {
+	top: 25%;
+}
+.par4-3 {
+	top: 50%;
+}
+.par4-4 {
+	top: 75%;
+}
+
+.par3-2 {
+	top: 33.333333%;
+}
+.par3-3 {
+	top: 66.666666%;
+}
+
+.par2-2 {
+	top: 50%;
+}

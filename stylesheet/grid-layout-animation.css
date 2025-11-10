@@ -1,0 +1,20 @@
+.box-image {
+	background-color: var(--hoverDarkGray);
+}
+
+.box-image div:has(img) {
+	transition: transform 0.3s ease;
+	position: absolute;
+}
+
+.box-image:hover .par4-1, .box-image:hover .par4-3, .box-image:hover .par3-1, .box-image:hover .par3-3, .box-image:hover .par2-1, .box-image:hover .par1-1 {
+	transform: translateX(30px) translateY(-30px)rotate(10deg);
+	z-index: 9999;
+}
+.box-image:hover .par4-2, .box-image:hover .par4-4, .box-image:hover .par3-2, .box-image:hover .par2-2 {
+	transform: translateX(-30px) translateY(-30px)rotate(-10deg);
+	z-index: 9999;
+}
+.box-image:hover .description {
+	z-index: 9999;
+}
