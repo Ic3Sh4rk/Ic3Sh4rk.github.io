@@ -1,4 +1,4 @@
-div.corp {
+.corp {
 	padding-top: 40px;
 	padding-bottom: 40px;
 	padding-left: 3vh;
@@ -52,12 +52,12 @@ div.corp {
 	/*cursor: pointer;*/
 }
 
-.par4-1, .par4-2, .par4-3, .par4-4, .par3-1, .par3-2, .par3-3, .par2-1, .par2-2, .par1-1 {
+.corp div:has(> img):not(.title) {
 	overflow: hidden;
 	border-radius: 1vw;
 }
 
-div.box-image div:has(img).par4-1, div.box-image div:has(img).par3-1, div.box-image div:has(img).par1-1 {
+div.box-image div:has(img):is(.par4-1, .par3-1, .par1-1) {
 	height: 100%;
 }
 
