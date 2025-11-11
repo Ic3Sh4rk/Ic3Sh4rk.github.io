@@ -4,7 +4,7 @@
 	padding-left: 3vh;
 	padding-right: 3vh;
 	display: grid;
-	grid-gap: 1vh;
+	grid-gap: 2vh;
 }
 
 .title {
@@ -32,13 +32,13 @@
 	width: fit-content;
 	color: #fff;
 	font-size: 5vw;
-	border-radius: 1vw;
+	border-radius: 2vh;
 }
 
 .box-image {
 	position: relative;
 	display: block;
-	border-radius: 1vw;
+	border-radius: 2vh;
 	background-color: var(--hoverDarkGray);
 	aspect-ratio: 3/4;
 }
@@ -46,13 +46,13 @@
 .box-image img {
 	width: 100%;
 	display: block;
-	border-radius: 1vw;
+	border-radius: 2vh;
 	/*cursor: pointer;*/
 }
 
 .corp div:has(> img):not(.title) {
 	overflow: hidden;
-	border-radius: 1vw;
+	border-radius: 2vh;
 }
 
 div.box-image div:has(img):is(.par4-1, .par3-1, .par1-1) {
