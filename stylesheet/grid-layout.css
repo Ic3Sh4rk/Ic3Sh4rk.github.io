@@ -42,6 +42,7 @@ div.corp {
 	display: block;
 	border-radius: 1vw;
 	height: calc(92vw/3*4/3);
+	background-color: var(--hoverDarkGray);
 }
 
 .box-image img {

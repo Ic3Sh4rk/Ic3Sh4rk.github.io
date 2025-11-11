@@ -1,38 +1,53 @@
-import os
+from os import rename, remove, listdir
+from time import sleep
 
-path = "../img/Articles/Mondial_de_l_auto_Paris_2024/"
-exept = "redimentionné_compressé_SD.jpg"
-rename = "resized_compressed_SD.jpg"
+path = "../img/Portefolio/"
+exept_filename = ["redimentionné_compressé_SD.jpg", "redimentionné_compressé_SD.png"]
+rename_filename = ["resized_compressed_SD.jpg", "resized_compressed_SD.png"]
+test = True
 
 def inspectfile(file, pathfile):
-    if file == exept:
+    if file == exept_filename[0]:
+        if not test:
+            rename(pathfile + file, pathfile + rename_filename[0])
         print("RENAMED >>> " + pathfile + file)
-        os.rename(pathfile + file, pathfile + rename)
+    elif file == exept_filename[1]:
+        if not test:
+            rename(pathfile + file, pathfile + rename_filename[1])
+        print("RENAMED >>> " + pathfile + file)
     elif file == rename:
         print("ALREADY RENAMED >>> " + pathfile + file)
     else:
+        if not test:
+            remove(pathfile + file)
         print("DELETED >>> " + pathfile + file)
-        os.remove(pathfile + file)
+
+reply = input("Test ? (Y/N) >>> ")
+if reply == "N" or reply == "n":
+    for i in range(6):
+        print("DELETE MODE in " + str(5-i))
+        sleep(1)
+    test = False
 
 
 while True:
-    for i in os.listdir(path):
+    for i in listdir(path):
         if "." in i:
             inspectfile(i, path)
         else:
-            for j in os.listdir(path + i + "/"):
+            for j in listdir(path + i + "/"):
                 if "." in j:
                     inspectfile(j, path + i + "/")
                 else :
-                    for k in os.listdir(path + i + "/" + j + "/"):
+                    for k in listdir(path + i + "/" + j + "/"):
                         if "." in k:
                             inspectfile(k, path + i + "/" + j + "/")
                         else:
-                            for l in os.listdir(path + i + "/" + j + "/" + k + "/"):
+                            for l in listdir(path + i + "/" + j + "/" + k + "/"):
                                 if "." in l:
                                     inspectfile(l, path + i + "/" + j + "/" + k + "/")
                                 else:
-                                    for n in os.listdir(path + i + "/" + j + "/" + k + "/" + l + "/"):
+                                    for n in listdir(path + i + "/" + j + "/" + k + "/" + l + "/"):
                                         if "." in n:
                                             inspectfile(n, path + i + "/" + j + "/" + k + "/" + l + "/")
                                         else:
