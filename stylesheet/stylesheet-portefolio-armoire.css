@@ -24,7 +24,7 @@ h1 {
 .corp img {
 	/*margin-top: 0.5em;*/
 	border-radius: 1vw;
-	width: 90%;
+	width: 100%;
 }
 
 .corp a {
@@ -34,11 +34,14 @@ h1 {
 .corp div:has(> img) {
 	display: flex;
 	justify-content: center;
+	/*align-items: center;*/
 	position: relative;
+	/*flex-direction: column;*/
 }
 
 .split3 {
 	display: grid;
+	gap: 1vh;
 }
 
 @media (orientation: landscape) {
@@ -66,4 +69,7 @@ h1 {
 	}
 }
 
+.corp .inline {
+	display: grid;
+}
 
