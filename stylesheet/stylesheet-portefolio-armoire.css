@@ -23,7 +23,7 @@ h1 {
 
 .corp img {
 	/*margin-top: 0.5em;*/
-	border-radius: 2vh;
+	border-radius: 5%;
 	width: 100%;
 }
 
@@ -39,10 +39,11 @@ h1 {
 	/*flex-direction: column;*/
 }
 
-.split3 {
+.split3 , .split2{
 	display: grid;
-	gap: 1vh;
+	gap: 2vh;
 }
+
 
 @media (orientation: landscape) {
 	.split3 {
@@ -50,7 +51,6 @@ h1 {
 	}
 
 	.split2 {
-		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
@@ -71,5 +71,6 @@ h1 {
 
 .corp .inline {
 	display: grid;
+	gap: 2vh;
 }
 
