@@ -1,6 +1,6 @@
 .box-image div:has(img) {
 	transition: transform 0.3s ease;
-	position: absolute;
+	
 }
 
 .box-image:hover :is(.par4-1, .par4-3, .par3-1, .par3-3, .par2-1, .par1-1) {
