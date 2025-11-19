@@ -17,7 +17,7 @@
 
 	<script src="../../../script/script.js" defer></script>
 
-	<title>Portefolio de Louis</title>
+	<title>Portfolio de Louis</title>
 </head>
 <body>
 	<header>
@@ -29,12 +29,216 @@
 				<div class="menu contact"><p>CV</p></div>
 			</a></li>
 			<li class="menu portefolio"><a href="../">
-				<div class="menu Portefolio"><p>Portefolio</p></div>
+				<div class="menu Portefolio"><p>Portfolio</p></div>
 			</a></li>
 		</menu>
 	</header>
 	<div class="corp">
+		<h1 class="cabin-bold" style="font-size: 200%;">Développement d’outils techniques et numériques destinés à l’optimisation d’une usine de préfabrication béton</h1>
+			
+		<h1 class="cabin-bold">Objectifs :</h1>
+
+		<p>L’objectif principal du projet consistait à concevoir une solution permettant d’optimiser la gestion des stocks au sein d’une usine de préfabrication béton.</p>
+		<p>Cette solution devait répondre à plusieurs critères définis dans le cahier des charges :</p>
+
+		<ul>
+			<li><p>Doit mesurer automatiquement le niveau des stocks.</p></li>
+			<li><p>Doit proposer au maximum deux solutions techniques distinctes (une pour les pièces légères, une pour les pièces lourdes).</p></li>
+			<li><p>Doit permettre la consultation simple et rapide des niveaux de stocks.</p></li>
+			<li><p>Doit prévoir un système d’alerte en cas de seuil critique.</p></li>
+			<li><p>Doit être adaptable à un usage extérieur et à un environnement poussiéreux.</p></li>
+			<li><p>Doit limiter les interventions nécessaires de la part des opérateurs.</p></li>
+		</ul>
+
+		<p>Ces objectifs ont été définis afin de supprimer les interruptions de production liées aux ruptures de stock non détectées, problématique récurrente rencontrée sur le site industriel.</p>
+
+		<h1 class="cabin-bold">Contexte :</h1>
+
+		<p>L’entreprise concernée utilise de nombreuses pièces métalliques ou plastiques destinées à être intégrées dans les ouvrages en béton. Ces éléments, achetés en grande quantité, sont stockés dans des boîtes en bois fabriquées par la menuiserie interne.</p>
+		<p>La gestion reposait entièrement sur la vérification visuelle des employés du contenu des boîtes, sans instrumentation mécanique ou électronique, entraînant des risques fréquents de rupture de stock.</p>
+
+		<p>Une analyse préliminaire de la situation a montré que la solution devait être intégrée dans un environnement soumis :</p>
+
+		<ul>
+			<li><p>&Agrave; la poussière,</p></li>
+			<li><p>à l’humidité,</p></li>
+			<li><p>à des variations de température,</p></li>
+			<li><p>à des charges variables pouvant dépasser plusieurs centaines de kilogrammes voir dans certains cas la tonne.</p></li>
+		</ul>
+
+		<p>Ces contraintes ont guidé toute la suite du projet.</p>
+
+		<h1 class="cabin-bold">Cahier des charges :</h1>
+
+		<p>Le cahier des charges s’est structuré autour de trois grandes fonctions primaires :</p>
+
+		<h3 class="cabin-bold">Fonction d’acquisition :</h3>
+
+		<ul>
+			<li><p>Doit permettre de mesurer le niveau du stock dans une boîte.</p></li>
+			<li><p>Doit fonctionner avec des charges élevées dans certains cas.</p></li>
+			<li><p>Doit s’adapter à la géométrie des boîtes existantes.</p></li>
+		</ul>
+
+		<h3 class="cabin-bold">Fonction de traitement :</h3>
+
+		<ul>
+			<li><p>Doit convertir la mesure brute en information exploitable.</p></li>
+			<li><p>Doit fonctionner sur un microcontrôleur à faible consommation.</p></li>
+			<li><p>Doit assurer une stabilité des données.</p></li>
+		</ul>
+
+		<h3 class="cabin-bold">Fonction de transmission :</h3>
+
+		<ul>
+			<li><p>Doit permettre d’afficher les stocks sur une interface simple.</p></li>
+			<li><p>Doit envoyer une alerte en cas de niveau critique.</p></li>
+			<li><p>Doit fonctionner sur un réseau sans fils.</p></li>
+		</ul>
+
+		<h1 class="cabin-bold">Premières analyses :</h1>
+
+		<p>L’étude de l’existant a montré que : aucune mesure automatique n’était disponible, les boîtes de stockage n’étaient pas équipées de systèmes mécaniques et que les ruptures de stock survenaient sans signalement préalable.</p>
+		<p>Pour répondre à chaque fonction du cahier des charges, le système à été séparé en 3 parties : capteur, avertisseur et contrôleur.</p>
+		<p>Ces éléments ont conduit à la recherche d’un système capable d’estimer le niveau des stocks sans modification majeure des habitudes de travail.</p>
+
+		<h1 class="cabin-bold">Étude des solutions possibles :</h1>
+
+		<p>Plusieurs pistes ont été envisagées pour la fonction de mesure :</p>
+
+		<ul>
+			<li><p>un capteur de poids via résistance variable,</p></li>
+			<li><p>un capteur de poids via capteur Hall,</p></li>
+			<li><p>un capteur de distance,</p></li>
+			<li><p>un capteur ultrason,</p></li>
+			<li><p>un capteur laser,</p></li>
+			<li><p>un capteur vidéo associé à une intelligence artificielle.</p></li>
+		</ul>
+
+		<p>Afin de les départager, un tableau multicritère a été élaborée. Les critères utilisés incluaient notamment :</p>
+
+		<ul>
+			<li><p>la maîtrise technique,</p></li>
+			<li><p>le coût,</p></li>
+			<li><p>la précision,</p></li>
+			<li><p>l'adaptabilité,</p></li>
+			<li><p>la facilité d’intégration,</p></li>
+			<li><p>les risques,</p></li>
+			<li><p>la consommation électrique.</p></li>
+		</ul>
+
+		<p>Le tableau de pondération a mis en évidence deux solutions pertinentes :</p>
+		<p>Le capteur de poids via résistance variable, adapté aux charges élevées et le capteur de distance, applicable aux boîtes plus légères.</p>
+		<p>Ces deux solutions ont été retenues pour la suite du projet afin de respecter la contrainte "deux solutions maximum".</p>
+
+
+		<h1 class="cabin-bold">Choix du microcontrôleur :</h1>
+
+		<p>Le microcontrôleur devait assurer :</p>
+
+		<ul>
+			<li><p>la mesure,</p></li>
+			<li><p>le traitement,</p></li>
+			<li><p>l’hébergement d’une interface web,</p></li>
+			<li><p>la connexion à un réseau,</p></li>
+			<li><p>la gestion d'un réseau,</p></li>
+			<li><p>l’envoi d’alertes par mail.</p></li>
+		</ul>
+		<div class="split2">
+			<div>
+				<p>Une comparaison entre plusieurs familles de microcontrôleurs a été réalisée (Arduino, ESP32, Raspberry Pi). Les besoins en connectivité, en mémoire et en faible consommation ont conduit à sélectionner l’ESP32-S3-WROOM-1-N8R8, possédant :</p>
+
+				<ul>
+					<li><p>une mémoire PSRAM de 8 Mo,</p></li>
+					<li><p>une connectivité Wi-Fi intégrée,</p></li>
+					<li><p>une compatibilité avec MicroPython,</p></li>
+					<li><p>une capacité à héberger un serveur web local.</p></li>
+				</ul>
+
+				<p>Pendant la phase de test un kit de développement ajoutant des connectiques USB a été utilisé pour les phases de test.</p>
+			</div>
+			<div>
+				<img src="../../../img/Portefolio/Stage/ESP32_devKit/ESP32 DevKit.png">
+			</div>
+			
+		</div>
+
+		<h1 class="cabin-bold">Conception mécanique :</h1>
+
+		<p>La solution retenue pour les boîtes lourdes reposait sur la transformation du déplacement vertical provoqué par la charge en rotation mesurable par un potentiomètre.</p>
+
+		<p>Un système mécanique a donc été conçu pour assurer la déformation contrôlée d’un ensemble de ressorts, la transformation de cette déformation en rotation, la protection de l’ensemble contre la poussière et l’intégration du potentiomètre dans un volume restreint.</p>
+
+		<h2 class="cabin-bold">Sélection des ressorts :</h2>
+
+		<p>Les calculs préliminaires ont déterminé qu’une boîte entièrement chargée pouvait atteindre environ 450 kg.</p>
+		<p>Avec quatre ressorts, chaque ressort devait supporter environ 112 kg.</p>
+		<p>Un modèle proposé par HPC répondait à ces exigences.</p>
+
+		<h2 class="cabin-bold">Premiers prototypes :</h2>
 		
+		<p>La première version utilisait un engrenage entraîné par une bielle.</p>
+		<p>Cette configuration s’est avérée sensible au coincement en raison du module d’engrenage choisi et donc une révision complète du mécanisme a été réalisée.</p>
+
+		<h2 class="cabin-bold">Nouvelle approche :</h2>
+
+		<p>La seconde version s’appuyait sur un mouvement hélicoïdal permettant :</p>
+
+		<ul>
+			<li><p>une rotation progressive,</p></li>
+			<li><p>une structure compacte,</p></li>
+			<li><p>une impression 3D réalisable.</p></li>
+		</ul>
+
+		<p>Plusieurs prototypes ont été imprimés en 3D, testés, puis améliorés successivement.</p>
+
+		<h1 class="cabin-bold">Conception électronique :</h1>
+
+		<h2 class="cabin-bold">Circuit de mesure :</h2>
+		
+		<p>Le système nécessitait une mesure précise de la tension issue du potentiomètre qui a été intégré dans un pont diviseur de tension. Mais les premiers essais sur platine ont mis en évidence une surtension liée à la qualité des composant électronique de la carte.</p>
+
+		<p>Un réglage de tension a alors été intégré via un second potentiomètre, puis le montage a été reproduit sur PCB afin d’assurer une stabilité suffisante pour les tests.</p>
+
+		<h2 class="cabin-bold">Développement de l’interface numérique :</h2>
+
+		<p>L'interface web a été développée en HTML et CSS afin d’afficher un premier temps les niveaux de stock. Ensuite cette interface à été rendu dynamique à l'aide de MicroPython, un logiciel qui permet de traduire un programme Python en code pour ESP32, en permettant de déclencher des mesures, et de les afficher sur l'interface.</p>
+
+		<p>Pour rendre l'interface accessible, le système a été configuré pour fonctionner en mode station (STA) qui permet la connexion à un réseau, avec basculement possible en point d’accès (AP) en cas d’échec.</p>
+
+		<h1 class="cabin-bold">Prototypage :</h1>
+
+
+		<p>L’ensemble des pièces mécaniques (cache, support, système hélicoïdal) a été modélisé et produit en impression 3D.</p>
+		<p>Plusieurs versions ont été testées afin d’optimiser la rigidité, l’encombrement, la protection contre la poussière et la la facilité de montage.</p>
+
+		<p>Malheureusement la fabrication finale des pièces a été interrompue en raison d’une perte des paramètres d’impression optimisés.</p>
+		<p>Cependant la conception étant validée, la production reste totalement réalisable sur un autre équipement.</p>
+
+		<h1 class="cabin-bold">Résultats :</h1>
+
+		<p>La solution obtenue répond aux objectifs définis dans le cahier des charges, car elle permet : </p>
+
+		<ul>
+			<li><p>la mesure automatique du niveau des stocks,</p></li>
+			<li><p>une intégration mécanique adaptée aux fortes charges,</p></li>
+			<li><p>une consultation simple via une interface web embarquée,</p></li>
+			<li><p>un envoi d’alertes en cas de seuil critique,</p></li>
+			<li><p>une adaptabilité aux environnements industriels,</p></li>
+			<li><p>une maintenance réduite.</p></li>
+		</ul>
+
+		<h1 class="cabin-bold">Conclusion :</h1>
+
+		<p>Bien que le système soit globalement défini, des tests de résistance mécanique restent nécessaires afin de vérifier son comportement en fonctionnement sous les charges envisagées.</p>
+
+		<p>La solution conçue apporte une réponse adaptée à la problématique de gestion des stocks rencontrée par l’usine de préfabrication béton. Elle permet de réduire les risques d’interruption de production, d’améliorer le suivi des matériaux et de simplifier le travail des opérateurs.</p>
+		<p>Grâce à une démarche structurée, comprenant analyse, conception mécanique, prototypage, électronique et développement logiciel, un système complet et fonctionnel a pu être défini et testé.</p>
+
+		<p>Ce stage m'aura permit de progresser sur les 3 axes importants de l’ingénierie , à savoir la mécanique, la programmation et l'électronique et m'aura permis de réalisé un projet passionnant en presque total autonomie.</p>
+
+		<p>Et je remercie ceux qui m'ont permis de réaliser ce stage, Benjamin Merceron mon maître de stage, ABP Préfa la société qui accueilli dans leurs locaux, Yannis Pouvreau et Xavier Werkmeister qui m'ont mis en contact avec M. Merceron.</p>
+
 	</div>
 	<footer>
 		<a href="https://www.linkedin.com/in/louis-pouvreau-765ba2281/">
